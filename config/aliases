@@ -1,7 +1,21 @@
 e.=explorer .
 gl=git log --oneline --all --graph --decorate  $*
-ls=ls --show-control-chars -F --color $*
-pwd=cd
+gv=g --version
 clear=cls
-history=cat %CMDER_ROOT%\config\.history
+hist=type %CMDER_ROOT%\config\.history
+clearh=echo.>%CMDER_ROOT%\config\.history
+chelp=type %CMDER_ROOT%\config\aliases
 unalias=alias /d $1
+upath=spath -u
+pwd=cd
+cd=cd /d $*
+..=cd..
+ll=gs ls -l --show-control-chars -F --color $*
+which=gs which $*
+ph=pushd $*
+pp=popd $*
+subld=subl -n %CD%
+
+slist=tasklist /FI "IMAGENAME eq w3wp.exe"
+skill=taskkill /F /FI "IMAGENAME eq w3wp.exe"
+tfs_clean=tfpt uu /noget /r *
