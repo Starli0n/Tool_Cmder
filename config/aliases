@@ -14,7 +14,9 @@ ll=gs ls -l --show-control-chars -F --color $*
 which=gs which $*
 ph=pushd $*
 pp=popd $*
+sub="%CMDER_ROOT%\vendor\SublimeText\sublime_text.exe" $1 -new_console:s50V
 subld=subl -n %CD%
+checksum=fciv.exe -both $*
 
 slist=tasklist /FI "IMAGENAME eq w3wp.exe"
 skill=taskkill /F /FI "IMAGENAME eq w3wp.exe"
