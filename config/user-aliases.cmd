@@ -1,6 +1,12 @@
+;= @echo off
+;= rem Call DOSKEY and use this file as the macrofile
+;= %SystemRoot%\system32\doskey /listsize=1000 /macrofile=%0%
+;= rem In batch mode, jump to the end of the file
+;= goto:eof
+
 ;= aliases
-ralias=@doskey /macrofile="%CMDER_ROOT%\config\aliases"
-aliases=subl %CMDER_ROOT%\config\aliases
+ralias=@doskey /macrofile="%CMDER_ROOT%\config\user-aliases.cmd"
+aliases=subl %CMDER_ROOT%\config\user-aliases.cmd
 unalias=alias /d $1
 ;=aliash=alias
 
