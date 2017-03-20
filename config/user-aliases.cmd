@@ -12,10 +12,10 @@ unalias=alias /d $1
 
 ;= Shell
 clear=cls
-ls=gs ls -p --show-control-chars -F --color $*
-ll=gs ls -pl  --show-control-chars -F --color $*
-la=gs ls -pla  --show-control-chars -F --color $*
-l=gs ls -pla  --show-control-chars -F --color $*
+ls=gs ls -p --show-control-chars -F --color %CD%\ $*
+ll=gs ls -pl  --show-control-chars -F --color %CD%\ $*
+la=gs ls -pla  --show-control-chars -F --color %CD%\ $*
+l=gs ls -pla  --show-control-chars -F --color %CD%\ $*
 ;=spath=spath
 upath=spath -u
 ;=lib=
@@ -43,8 +43,8 @@ gv=git --version
 ;= Sublime Text
 sub="%CMDER_ROOT%\vendor\SublimeText\sublime_text.exe" $1 -new_console:s50V
 subld=subl -n %CD%
-pkg=cd /d %TOOLS%\SublimeText\Data\Packages
-pkgu=cd /d %TOOLS%\SublimeText\Data\Packages\User
+pkg=cd /d %TOOLS%\SublimeText3\Data\Packages
+pkgu=cd /d %TOOLS%\SublimeText3\Data\Packages\User
 
 ;= Network
 ip=ipconfig
