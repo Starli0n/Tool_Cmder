@@ -735,7 +735,7 @@
 				<value name="ClipboardVkAllLines" type="dword" data="0000102d"/>
 				<value name="ClipboardVkFirstLine" type="dword" data="00001156"/>
 				<value name="DeleteWordToLeft" type="dword" data="00001108"/>
-				<value name="FindTextKey" type="dword" data="00005d46"/>
+				<value name="FindTextKey" type="dword" data="00001146"/>
 				<value name="ScreenshotKey" type="dword" data="00000000"/>
 				<value name="ScreenshotFullKey" type="dword" data="00000000"/>
 				<value name="ShowStatusBarKey" type="dword" data="00000000"/>
